@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+//LOOK ARRAY
+int ack(int m[],int n);
+int main()
+{
+	int array[6]={2,45,6,7,23,0},t;
+	t=ack(array,sizeof(array)/sizeof(array[1]));
+	printf("%d",t);
+	return 0;
+}
+int ack(int m[],int n)
+{
+	static short int i=0;
+	static short int j;
+	if (i<n)
+	{
+		if(i==0)
+		{
+			j=m[i];
+		}
+		else
+		{
+			if(m[i]>j)
+			{
+				j=m[i];
+			}
+		}
+		i+=1;
+		return ack(m,n);
+	}
+	return j;
+}
+

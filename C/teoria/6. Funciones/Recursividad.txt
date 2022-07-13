@@ -1,0 +1,8 @@
+La recursividad es una poderosa herramienta de programación, sin embargo,
+presenta dos problemas:
+	• La velocidad de ejecución de un algoritmo programado de forma recursiva es mucho mas lento que el programado de forma iterativa.
+	• La recursividad, si es excesiva, puede ocasionar el desbordamiento de la pila, y con ello, el fallo en la ejecución del programa.
+Sin embargo, el uso de la recursividad es frecuente en campos como la
+inteligencia artificial, etc., y en la implementación de ciertos algoritmos tales como el
+algoritmo de ordenación "QuickSort", muy difícil de implementar de forma iterativa,
+pero relativamente sencillo de forma recursiva.

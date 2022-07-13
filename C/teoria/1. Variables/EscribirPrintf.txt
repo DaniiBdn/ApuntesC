@@ -1,0 +1,16 @@
+'\0' carácter de fin de cadena
+• '\a' carácter de alarma
+• '\b' retroceso
+• '\f' avance de hoja
+• '\n' nueva línea
+• '\r' retorno que carro
+• '\t' tabulador horizontal
+• '\v' tabulador vertical
+• '\\' diagonal invertida
+• '\?' interrogación
+• '\'' apóstrofo
+• '\"' comillas
+• '\ooo' representa el carácter cuya posición de la tabla ASCII se corresponde
+con el número octal "ooo".
+• '\xhh' representa el carácter cuya posición de la tabla ASCII se corresponde
+con el número hexadecimal "hh". 

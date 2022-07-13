@@ -1,0 +1,27 @@
+#define <stdio.h>
+
+int main()
+{
+	FILE *f;
+	char aux2[100];
+	int i,cont;
+
+		f=fopen("Save.txt","r");
+
+	if(f == NULL){
+		printf("no se ha podido abrir");
+	}
+	/*
+	while(!feof(f))
+	{
+		fgets(aux2,100,f);
+		cont++; // cuenta las lineas
+	}
+	
+	rewind(f); //pone el punte al principio del texto
+	*/
+	for(i=0; !feof(f); i++)
+	{
+		
+	}
+}

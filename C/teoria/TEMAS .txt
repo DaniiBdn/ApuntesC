@@ -1,0 +1,39 @@
+ Directivas del preprocesador
+	#define #if #line #elif #ifdef #pragma #else #ifndef #undef #error #include 
+	define funciones
+Memoria Dinamica
+	Pila 
+
+
+Fundamentos de Lenguaje C
+Instrucciones de lectura/escritura, Instrucciones de Control
+Arrays y Estructuras
+Punteros
+Funciones
+Ficheros, Preprocesador y programas multifichero
+Algoritmos. Estructuras de datos en C
+Programación avanzada
+Programación de juegos y gráficos con Allegro
+
+Tema 2 - Identificadores, tipos de datos, variables
+y constantes.
+Tema 3 - Operadores aritméticos, relaciónales y
+lógicos; operador asignación; operador sizeof y
+operadores avanzados (operadores sobre bits y
+operador ?).
+Tema 4 - Conversión de tipos de datos
+Tema 5 - Sentencias de control y bucles.
+Tema 6 - Arrays, cadenas y punteros.
+Tema 7 - Funciones.
+Tema 8 - Estructuras, campos de bit, uniones y
+enumeraciones.
+Tema 9 - El preprocesador.
+Tema 10 - Entrada y salida.
+Tema 11 - Asignación dinámica de memoria.
+Apéndice A - Funciones de biblioteca del
+standard ANSI de C.
+Apéndice B: Ejemplos de programas en C.
+
+Mi lista:
+	Recursividad, aun cuesta
+	Punteros a funciones, ejemplos y ejercicios

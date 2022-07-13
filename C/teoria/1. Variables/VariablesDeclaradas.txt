@@ -1,0 +1,19 @@
+const		Variable de valor constante (#Define)(x=x+5 ERROR)
+volatile 	Variable cuyo valor es modificado externamente
+		Se puede usar las 2 opciones para tener una variables que se modifique en el exterior del programa pero no en el interior.
+
+---------------------------------------------------------------------
+Especificador de almacenamiento	   |	Efecto			    |
+---------------------------------------------------------------------
+auto 				   |	Variable local (por defecto)|
+extern 				   |	Variable externa	    |
+static 				   |	Variable estática	    |
+register 			   |	Variable registro	    |
+---------------------------------------------------------------------
+
+auto: variable local (todas lo son, no se usa).
+extern: Variable global entre modulos.
+static local: almacena todo al rato el valor de la variable pero solo se puedeacceder a ella en el bloque donde haya sido declarada. 
+static global: Es global solo en el modulo donde se le declara, no puede ser llamada en otro modulo. 
+Register: Dicho especificador indica al compilador que, caso de ser posible, mantenga esa variable en un registro de la CPU.
+	  Es utilizada para variables muy frecuentemente usadas, tales como contadores de bucles.

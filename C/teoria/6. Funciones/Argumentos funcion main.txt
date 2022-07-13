@@ -1,0 +1,8 @@
+La función main()
+argumentos que acepta la función main() son un entero 
+	int argc 
+	un array de punteros a strings (char *argv[])
+	un array de punteros a strings (char *env[])
+• El parámetro argc contiene el número de argumentos en la línea de ordenes de la llamada al programa.
+• El parámetro argv contiene un puntero a cada uno de los argumentos (strings) de la línea de ordenes de la llamada al programa.
+• El parámetro env contiene un puntero a cada una de las variables de ambiente (strings) del sistema operativo.

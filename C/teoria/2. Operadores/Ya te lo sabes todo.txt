@@ -1,0 +1,26 @@
+Operador |		      |	Operador     |		     |	Operador     |		     |
+---------------------------------------------------------------------------------------------
+++ 	 |	Incremento    |	-- 	     |	Decremento   |		     |		     |
+- 	 |	Menos unario  |		     |		     |		     |		     |
+* 	 |	Multiplicación|	/	     |	División     |	% 	     |	Módulo	     |
++ 	 |	Suma 	      |	- 	     |	Resta        |		     |		     |
+---------------------------------------------------------------------------------------------
+
+Operador |	Condicionales |	
+-------------------------------
+! 	 |	Not	      |	
+> < >= <=|	mayor o menos |	
+== != 	 |	(Des)Igual    |	
+&& ||	 |	AND OR 	      |	
+-------------------------------
+
+El operador sizeof(x)
+devuelve el tamaño de una variable o tipo de dato durante la compilación, no durante la
+ejecución del programa
+
+    Operadores BIT A BIT      |	
+-------------------------------
+∼ 	 |	Not	      |	
+<< >>	 |	Desplazamiento|	
+& ^ | 	 |	AND XOR OR    |		
+-------------------------------

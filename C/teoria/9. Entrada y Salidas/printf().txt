@@ -1,0 +1,19 @@
+Especificador		Descripción
+_________________________________
+
+%c 					Carácter.
+%d 					Enteros decimales con signo.
+%i 					Enteros decimales con signo.
+%e 					Punto flotante en notación científica (e minúscula).
+%E 					Punto flotante en notación científica (E mayúscula).
+%f 					Punto flotante.
+%g 					Usar el más corto de %e y %f.
+%G 					Usar el más corto de %E y %f.
+%o 					Octal sin signo.
+%s 					Cadena de caracteres.
+%u 					Enteros decimales sin signo.
+%x 					Hexadecimales sin signo (letras minúsculas).
+%X 					Hexadecimales sin signo (letras mayúsculas).
+%p 					Mostrar un puntero.
+%n 					El argumento asociado es un puntero a un entero, el cual recibirá elnúmero de caracteres escritos.
+%% 					Imprimir el signo %.

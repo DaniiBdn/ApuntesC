@@ -1,0 +1,48 @@
+fopen("nombre","modo")
+/*
+Modo 			Descripción
+r 				Abrir un archivo para lectura.
+w 				Crear un archivo para escritura.
+a 				Abrir un archivo para añadir.
+rb 				Abrir un archivo binario para lectura.
+wb 				Crear un archivo binario para escritura.
+ab 				Abrir un archivo binario para añadir.
+rt 				Abrir un archivo de texto para lectura.
+wt 				Crear un archivo de texto para escritura.
+at 				Abrir un archivo de texto para añadir.
+r+ 				Abrir una archivo para lectura/escritura.
+w+ 				Crear un archivo para lectura/escritura.
+a+ 				Abrir un archivo para leer/añadir.
+r+b 			Abrir un archivo binario para lectura/escritura.
+w+b 			Crear un archivo binario para lectura/escritura.
+a+b 			Abrir un archivo binario para leer/añadir.
+r+t 			Abrir un archivo de texto para lectura/escritura.
+w+t 			Crear un archivo de texto para lectura/escritura.
+a+t 			Abrir un archivo de texto para leer/añadir.
+
+
+Si el archivo no existe, lo crea.
+*/
+
+FILE *f;
+char aux,aux2[100];
+
+f=fopen("ejemplo.txt","w");
+
+if(f == NULL){
+	printf("no se ha podido abrir");
+}
+//MANERA 1
+while(aux!=EOF)
+{
+	aux=fget(f);
+	pritnf("%c",aux);
+}
+//MANERA 2
+while(!feof(f))
+{
+	fgets(aux2,100,f);
+	pritnf("%s",aux2);
+}
+fclose(f);
+

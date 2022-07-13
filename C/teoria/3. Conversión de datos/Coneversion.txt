@@ -1,0 +1,19 @@
+PRIMERA REGLA:
+	Todos los char y short int se convierten a int. 
+	Todos los float a double
+	
+Para todo par de operandos, lo siguiente ocurre en secuencia:
+	o Si uno de los operandos es un long double, el otro se convierte en long double.
+	o Si uno de los operandos es double, el otro se convierte a double.
+	o Si uno de los operandos es long, el otro se convierte a long.
+	o Si uno de los operandos es unsigned, el otro se convierte a unsigned.
+Ejemplo:
+( ch / i ) + ( f * d ) - ( f + i ); ---> ( ch / i ) + ( f * d ) - ( f + i );
+ char int + float double- float int	     int        double    double int
+								    double
+
+int a=3,b=2;
+float c;
+
+c=a/b; c= 1.0 (hace opearion en int primero y almacena en variable float)
+c=(float)a/b; c=1.5

@@ -1,0 +1,16 @@
+expresión1 ? expresión2 : expresión3;
+
+=
+
+if( expresión1 )
+ expresión2;
+else
+ expresión3; 
+
+ejemplo;
+
+
+ mayor = (n1 > n2) ? n1 : n2;
+ menor = (n1 < n2) ? n1 : n2; 
+
+(si hay más separar por comas) ','

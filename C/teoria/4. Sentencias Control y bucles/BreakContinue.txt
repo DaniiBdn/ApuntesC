@@ -1,0 +1,2 @@
+Break salir del bucle
+Continue salta de iteración en un bucle

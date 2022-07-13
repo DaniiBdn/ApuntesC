@@ -1,0 +1,41 @@
+/*
+#if 		#ifdef 		#ifndef 	#else
+#elif 		#endif 		#include 	#define
+#undef 		#line		#error 		#pragma
+*/
+#define TRUE 1
+#define FALSE 0
+
+#define MIN(a,b) (a<b) ? a : b
+
+#undef FALSE //Se borra la macro a partir de aqui.
+
+#include <stdio.h> // SOLO busca la libreria en el directorio del compilador y después en los directorios standard de C
+#include "stdio.h" // PRIMERO busca la libreria en el directorio del trabajo y depues en el caso de arriba.
+
+#define VALOR 15
+#if VALOR<0
+	b=b/(-VALOR);
+#elif VALOR==0
+	b=b/(VALOR+1);
+#else
+	b=b/VALOR;
+#endif
+
+//#ifdef Y #ifndef COMPRUEBA SI UNA MACRO HA SIDO GENERADA
+#define VAL 10
+
+#ifdef VAL
+	printf("VAL definido");
+#else
+	#error VAL NO ESTA DEFINIDO //GENERA UN ERROR DE COMPILACIÓN
+#endif
+
+#ifndef NOVAL
+	printf("NOVAL no definido");
+#endif
+
+//no le veo el sentido la vdd
+#line número ["nombre de archivo"]
+//mirar
+#pragma nombre

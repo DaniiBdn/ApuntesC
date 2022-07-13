@@ -1,0 +1,30 @@
+	   tipo		|	bits	|	Intervalo
+----------------------------------------------------------
+ENTEROS
+				CHAR
+
+		       char	|	8	|	-128 a 127
+      unsigned char	|	8	|	 0 a 255
+
+				INT
+
+         short int	|	8	|	-128 a 127
+unsigned short int	|	8	|	 0 a 255
+               int	|	16	|	-32768 a 32767
+      unsigned int	|	16	|	 0 a 65535
+	  long int		|	32	|	-2.147.483.648 a 2.147.483.647
+ unsigned long int	|	32	|	0 a 4.294.967.296
+
+NUMEROS REALES
+				FLOAT
+
+       float	|	32	|	3.4E-38 a 3.4E+38
+
+				DOUBLE
+	   double	|	64	|	 1.7E-308 a 1.7E+308
+  long double	|	128	|	3.4E-4932 a 3.4E+4932 (24 digits aprox)
+ 				
+
+const		Variable de valor constante (#Define)(x=x+5 ERROR)
+volatile 	Variable cuyo valor es modificado externamente
+		Se puede usar las 2 opciones para tener una variables que se modifique en el exterior del programa pero no en el interior.

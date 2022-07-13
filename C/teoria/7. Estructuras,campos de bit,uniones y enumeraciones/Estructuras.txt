@@ -1,0 +1,55 @@
+Formas de escribir:
+struct LISTA{
+ int tam;
+ char cadena[50];
+}var_lista;
+
+var_lista.tam=2;
+
+struct ALFA{
+ int a;
+ float b;
+};
+
+struct ALFA a;
+a.a=2;
+a.b=4.0;
+
+formas de pasar struct en funciones:
+
+struct ALFA{
+ int a;
+ char b[20];
+};
+void PasoDeElementos(int val,char *cadena)
+{
+ val=15;
+ cadena[7]=‘a’;
+}
+void PasoDeLaEstructuraPorValor(struct ALFA a)
+{
+ a.val=14;
+ a.cadena[6]=‘b’;
+}
+void PasoDeLaEstructuraPorReferencia(struct ALFA *a)
+{
+ *(a.val)=13;
+ *(a.cadena)[5]=‘c’;
+ //si queremos no poner parentesis
+ a->val=13;
+ a->cadena[5]=‘c’;
+}
+void PasoDeUnArrayDeEstructuras(struct ALFA *a)
+{
+ a[4].val=12;
+ a[5].cadena[4]=‘d’;
+}
+int main(void)
+{
+ struct ALFA a,b[10];
+ PasoDeElementos(a.val,a.b);
+ PasoDeLaEstructuraPorValor(a);
+ PasoDeLaEstructuraPorReferencia(&a);
+ PasoDeUnArrayDeEstructuras(b);
+ return 0;
+}

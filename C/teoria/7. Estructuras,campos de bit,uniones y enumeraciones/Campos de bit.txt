@@ -1,0 +1,45 @@
+struct ALFA{
+unsigned a : 1; //variable tiene 1 bit
+signed b : 2;	//variable tiene 2 bit
+unsigned : 4;
+unsigned c : 1;
+}campo; /*total de bits= 1+2+4+1=8
+Sirve para optimizar espacio
+
+Un campo de bit es un método predefinido por C para poder acceder a un bit de
+un byte. Aunque dicho acceso siempre es posible mediante operaciones el uso de los
+operadores sobre bits, explicados con anterioridad, el uso de campos de bit puede
+añadir claridad al programa.
+
+UNIONES
+
+Como puede observarse su declaración, etc., es parecida a la declaración de una
+estructura. Sin embargo, en una unión, todos los tipos de datos comparten la misma
+dirección de memoria. Así, si declaramos:
+*/
+union ALFA{
+int a;
+char b;
+}alfa;
+
+Tendremos:
+<------alfa.a------>
+Byte1 			Byte0
+			  <-alfa.b->
+Ejemplo 
+alfa.a=0x01EF;
+alfa.b=0x10; //alfa.a--> 0x0110;
+/////////////////////////////////
+union BETA{
+unsigned short a;
+char b[2];
+};beta
+/*/
+Entonces beta.b[0] contendrá el byte bajo de beta.a, y beta.b[1] contendrá el
+byte alto de beta.a. Ello permite acceder a la parte alta o baja de dicho unsigned short
+sin necesidad de usar operadores sobre bits.
+*/
+
+
+ENUMERACIONES
+enum nombre_enum{lista_de_enumeración} lista_de_variables;
