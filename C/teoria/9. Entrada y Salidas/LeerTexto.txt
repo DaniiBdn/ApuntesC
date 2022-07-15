@@ -3,12 +3,13 @@
 int main()
 {
 	FILE *f;
-	char aux2[100];
-	int i,cont;
+	char aux,aux2[100];
+	int i,j,cont;
 
 		f=fopen("Save.txt","r");
 
-	if(f == NULL){
+	if(f == NULL)
+	{
 		printf("no se ha podido abrir");
 	}
 	/*
@@ -20,8 +21,17 @@ int main()
 	
 	rewind(f); //pone el punte al principio del texto
 	*/
-	for(i=0; !feof(f); i++)
+	for(i=0; !feof(f); i++) 
 	{
-		
+		for(i=0; aux!="\n"; i++)
+		{
+		aux=fgetc(f); //lee caracter por caracter
+		if(aux!="\n")
+		{
+			aux2[j]=aux;
+		}
+		}
+		//aqui ha leido 1 linea guardada en aux2,
+		//aqui podemos guardad variables
 	}
 }
